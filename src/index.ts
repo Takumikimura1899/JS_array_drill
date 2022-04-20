@@ -19,3 +19,18 @@ document.getElementById("app").innerHTML = `
   const result = [...a, b];
   console.log(result);
 })();
+
+// 問二
+// 配列aの最後の要素を削除した新しい配列resultを作ってください。
+// 削除した最後の要素はdeletedItemに入れてください。
+// ただし、配列aを変更してはいけません。
+
+(() => {
+  const a = [1, 2, 3, 4];
+  // deletedItem = 4, result = [1,2,3] にする
+
+  const result = [...a];
+  const deletedItem = result.pop();
+
+  console.log(result, deletedItem);
+})();
