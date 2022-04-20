@@ -17,7 +17,7 @@ document.getElementById("app").innerHTML = `
   // コードを書いて result = [1,2,3,4]にする
 
   const result = [...a, b];
-  console.log(result);
+  console.log(`問一の答え:${result}`);
 })();
 
 // 問二
@@ -32,5 +32,18 @@ document.getElementById("app").innerHTML = `
   const result = [...a];
   const deletedItem = result.pop();
 
-  console.log(result, deletedItem);
+  console.log(`問二の答え:result = ${result} deletedItem = ${deletedItem}`);
+})();
+
+// 問三
+// 配列aとbをつなげた新しい配列resultを作ってください。
+// ただし、配列aもbも変更してはいけません。
+
+(() => {
+  const a = [1, 2, 3];
+  const b = [4, 5, 6];
+  // result = [1,2,3,4,5,6]にする。
+
+  const result = [...a, ...b];
+  console.log(`問三の答え:${result}`);
 })();
