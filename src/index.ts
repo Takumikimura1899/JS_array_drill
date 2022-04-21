@@ -47,3 +47,14 @@ document.getElementById("app").innerHTML = `
   const result = [...a, ...b];
   console.log(`問三の答え:${result}`);
 })();
+
+// 問四
+// 配列aには重複した値が入っています。重複を除いた新しい配列resultを作ってください。
+// ただし、配列aは変更してはいけません。
+
+(() => {
+  const a = [1, 1, 2, 1, 3, 5, 3, 2];
+  // コードを書いて result = [1,2,4,5]にする。
+  const result = Array.from(new Set(a));
+  console.log(result);
+})();
